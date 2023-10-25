@@ -1,0 +1,15 @@
+{
+  "name": "manifest-title",
+  "blocks": [
+    {
+      "id": "ts2uu",
+      "type": "ManifestTitle",
+      "data": {}
+    },
+    {
+      "id": "n8cupb",
+      "type": "CloverViewer",
+      "data": {}
+    }
+  ]
+}

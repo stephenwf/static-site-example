@@ -33,3 +33,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# HSS Next
+public/collections/
+public/config/
+public/manifests/
+public/meta/
+public/stores/
+public/collection.json
+public/topics/
+.iiif/
+
+# Local Netlify folder
+.netlify

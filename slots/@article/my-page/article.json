@@ -1,0 +1,14 @@
+{
+  "name": "article",
+  "blocks": [
+    {
+      "id": "0i865",
+      "type": "NewsCard",
+      "data": {
+        "link": "manifests/wellcome-b30497012",
+        "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b30497012_0001.JP2/full/200,/0/default.jpg",
+        "label": "16th self-portrait."
+      }
+    }
+  ]
+}

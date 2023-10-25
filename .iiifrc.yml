@@ -1,0 +1,101 @@
+
+server:
+  url: http://localhost:3000
+
+run:
+  - extract-slug-source
+  - extract-label-string
+  - extract-thumbnail
+  - manifest-sqlite
+  - metadata-analysis
+
+stores:
+  manifests:
+    type: iiif-json
+    path: ./content
+    pattern: "**/*.json"
+    destination: manifests
+    base: ./content
+
+  cookbook-example:
+    type: iiif-remote
+    url: https://iiif.io/api/cookbook/recipe/0005-image-service/manifest.json
+    overrides: ./content
+    slugTemplates:
+      - iiif-cookbook-slug
+
+  hutton:
+    type: iiif-remote
+    url: https://view.nls.uk/collections/7446/74466682.json
+    overrides: ./content
+    slugTemplates:
+      - nls-manifests
+      - nls-collections
+
+  wellcomePaintings:
+    type: iiif-remote
+    urls:
+      - https://iiif.wellcomecollection.org/presentation/collections/digitalcollections/digpaintings
+      - https://iiif.wellcomecollection.org/presentation/collections/digitalcollections/digmuybridge
+    slugTemplates:
+      - wellcome-manifest
+      - wellcome-collection
+    run:
+      - extract-topics
+    config:
+      extract-topics:
+        topicTypes:
+          technique: ['Type/technique']
+          subjects: ['Subjects']
+
+config:
+  extract-label-string:
+    language: en
+
+  manifest-sqlite:
+    enableTopics: true
+
+slugs:
+  wellcome-manifest:
+    type: Manifest
+    domain: iiif.wellcomecollection.org
+    prefix: /presentation/
+    addedPrefix: wellcome-
+    examples:
+      - https://iiif.wellcomecollection.org/presentation/b30496974
+
+  wellcome-collection:
+    type: Collection
+    domain: iiif.wellcomecollection.org
+    prefix: /presentation/collections/
+    addedPrefix: wellcome-
+    examples:
+      - https://iiif.wellcomecollection.org/presentation/collections/digitalcollections/digpaintings
+
+  iiif-cookbook-slug:
+    type: Manifest
+    domain: iiif.io
+    prefix: /api/cookbook/recipe/
+    addedPrefix: recipe/
+    suffix: /manifest.json
+    examples:
+      - https://iiif.io/api/cookbook/recipe/0001-mvm-image/manifest.json
+
+  nls-manifests:
+    type: Manifest
+    domain: view.nls.uk
+    prefix: /manifest/
+    suffix: /manifest.json
+    addedPrefix: nls-
+    examples:
+      - https://view.nls.uk/manifest/7446/74464117/manifest.json
+    pathSeparator: '-'
+
+  nls-collections:
+    type: Collection
+    domain: view.nls.uk
+    prefix: /collections/
+    suffix: .json
+    addedPrefix: nls-
+    examples:
+      - https://view.nls.uk/collections/7446/74466699.json

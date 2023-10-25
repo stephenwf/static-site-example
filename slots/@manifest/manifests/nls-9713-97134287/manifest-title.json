@@ -1,0 +1,10 @@
+{
+  "name": "manifest-title",
+  "blocks": [
+    {
+      "id": "971f7r",
+      "type": "CloverViewer",
+      "data": {}
+    }
+  ]
+}

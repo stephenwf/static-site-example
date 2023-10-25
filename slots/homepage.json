@@ -1,0 +1,137 @@
+{
+  "name": "homepage",
+  "blocks": [
+    {
+      "id": "l95yk",
+      "type": "FourGrid",
+      "data": {
+        "title": "My manifests",
+        "columns": 4
+      },
+      "slots": {
+        "gridItems": {
+          "slot_id": "gridItems",
+          "blocks": [
+            {
+              "id": "g0xs93f",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134410",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419393.4.jpg",
+                "label": "Ayrshire",
+                "description": "",
+                "tag": "manifest"
+              }
+            },
+            {
+              "id": "fhkjq",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134421",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419653.4.jpg",
+                "label": "Haddingtonshire",
+                "tag": "manifest"
+              }
+            },
+            {
+              "id": "k0pose",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134412",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419495.4.jpg",
+                "label": "Berwickshire",
+                "description": "",
+                "tag": "manifest"
+              }
+            },
+            {
+              "id": "59kz8f",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134495",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419579.4.jpg",
+                "label": "Fife",
+                "tag": "manifest"
+              }
+            },
+            {
+              "id": "39z9yg",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134422",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419704.4.jpg",
+                "label": "Inverness-shire",
+                "tag": "manifest"
+              }
+            },
+            {
+              "id": "gvlw3a",
+              "type": "NewsCard",
+              "data": {
+                "link": "manifests/nls-9713-97134415",
+                "thumbnail": "https://deriv.nls.uk/dcn4/7441/74419484.4.jpg",
+                "label": "Dumfriesshire",
+                "tag": "manifest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hawh4",
+      "type": "FourGrid",
+      "data": {
+        "title": "Some manifests",
+        "columns": 4
+      },
+      "slots": {
+        "gridItems": {
+          "slot_id": "gridItems",
+          "blocks": [
+            {
+              "id": "2q392l",
+              "type": "ManifestCard",
+              "data": {
+                "link": "manifests/wellcome-b30496950",
+                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b30496950_0001.JP2/full/200,/0/default.jpg",
+                "label": "9th self-portrait.",
+                "description": "a description"
+              }
+            },
+            {
+              "id": "xjj2l",
+              "type": "ManifestCard",
+              "data": {
+                "link": "manifests/wellcome-b30496925",
+                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b30496925_0001.JP2/full/200,/0/default.jpg",
+                "label": "6th self-portrait.",
+                "description": "asdasd asdasd "
+              }
+            },
+            {
+              "id": "q8kg2",
+              "type": "ManifestCard",
+              "data": {
+                "link": "manifests/wellcome-b3049686x",
+                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b3049686x_0001.JP2/full/200,/0/default.jpg",
+                "label": "Where the soft winds blow.",
+                "description": "asdasdasd asdasd asd "
+              }
+            },
+            {
+              "id": "jcpw2j",
+              "type": "ManifestCard",
+              "data": {
+                "link": "manifests/wellcome-b15423165",
+                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b15423165_0001.jp2/full/317,/0/default.jpg",
+                "label": "Albert Schweitzer.",
+                "description": "asdasdasd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "manifest-title",
+  "blocks": [
+    {
+      "id": "7dlyn",
+      "type": "ManifestTitle",
+      "data": {}
+    }
+  ]
+}
