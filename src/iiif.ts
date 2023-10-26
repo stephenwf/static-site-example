@@ -67,8 +67,8 @@ export async function getSearchQuery() {
   return db.prepare(
     `select m.*, COUNT(*) as hits 
        from manifests m
-                join topics_manifests tm on m.id = tm.manifest_id
-                join topics t on tm.topic_id = t.id
+                left join topics_manifests tm on m.id = tm.manifest_id
+                left join topics t on tm.topic_id = t.id
        where m.label LIKE '%' || $search || '%'
           or t.label LIKE '%' || $search || '%'
        group by m.id

@@ -17,7 +17,7 @@ export const ManifestViewer = block(
     propSources: [
       {
         type: "search",
-        url: `/api/manifests?q=%`,
+        url: `/api/manifests?q={query}`,
         mapToList: (response: ManifestSearchResponse) => {
           return response.results.map((result) => ({
             label: result.label,
