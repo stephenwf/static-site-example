@@ -28,7 +28,7 @@ export const ManifestCard = block(
     return (
       <a
         href={props.link}
-        className="border p-3 rounded hover:border-green-700 transition-colors flex flex-col"
+        className="border p-3 rounded hover:border-green-700 transition-colors flex flex-col w-full"
       >
         <div className="flex-1 bg-white rounded overflow-hidden aspect-square mb-3">
           <img

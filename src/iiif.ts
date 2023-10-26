@@ -12,6 +12,26 @@ export async function loadJson<T>(name: string): Promise<T> {
   return JSON.parse(text);
 }
 
+export async function getSlug(res: any) {
+  if (!res) {
+    return undefined;
+  }
+  if (res["hss:slug"]) {
+    return `/${res["hss:slug"]}`;
+  }
+
+  const slug = await client.urlToSlug(res.id, res.type);
+
+  if (!slug) {
+    return undefined;
+  }
+
+  if (res.type === "Collection") {
+    return slug.startsWith("collections/") ? slug : `/collections/${slug}`;
+  }
+  return slug.startsWith("manifests/") ? slug : `/manifests/${slug}`;
+}
+
 export async function loadManifest(manifestSlug?: string) {
   if (!manifestSlug) {
     throw new Error("No manifest slug provided");
