@@ -32,22 +32,6 @@ stores:
       - nls-manifests
       - nls-collections
 
-  wellcomePaintings:
-    type: iiif-remote
-    urls:
-      - https://iiif.wellcomecollection.org/presentation/collections/digitalcollections/digpaintings
-      - https://iiif.wellcomecollection.org/presentation/collections/digitalcollections/digmuybridge
-    slugTemplates:
-      - wellcome-manifest
-      - wellcome-collection
-    run:
-      - extract-topics
-    config:
-      extract-topics:
-        topicTypes:
-          technique: ['Type/technique']
-          subjects: ['Subjects']
-
 config:
   extract-label-string:
     language: en
