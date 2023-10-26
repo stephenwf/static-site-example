@@ -11,13 +11,14 @@ export default async function ManifestPage({
 }: {
   params: { slug: string[] };
 }) {
-  const isArticle = params.slug.includes("article");
+  const slugParts = params.slug.map((s) => decodeURIComponent(s || ""));
+  const isArticle = slugParts.includes("article");
 
   if (isArticle) {
     const manifestPath = ["manifests"];
     const articlePath = [];
     let isArticle = false;
-    for (const slug of params.slug) {
+    for (const slug of slugParts) {
       if (slug === "article") {
         isArticle = true;
         continue;
@@ -36,7 +37,7 @@ export default async function ManifestPage({
     );
   }
 
-  const fullPath = ["manifests", ...params.slug].join("/");
+  const fullPath = ["manifests", ...slugParts].join("/");
   const manifest = await client.loadManifest(fullPath);
   const subContext = await fileSystemLoader.querySubContext({
     manifest: fullPath,

@@ -38,6 +38,16 @@ stores:
         topicTypes:
           place: [ 'Place depicted' ]
 
+  ual:
+    type: iiif-remote
+    urls:
+      - https://digitalcollections-api.arts.ac.uk/iiif/collections/members/AB
+      - https://digitalcollections-api.arts.ac.uk/iiif/collections/members/BSY
+    slugTemplates:
+      - ual-collections
+      - ual-manifests
+
+
 config:
   extract-label-string:
     language: en
@@ -46,6 +56,23 @@ config:
     enableTopics: true
 
 slugs:
+  ual-collections:
+    type: Collection
+    domain: digitalcollections-api.arts.ac.uk
+    prefix: /iiif/collections/
+    addedPrefix: ual-
+    examples:
+      - https://digitalcollections-api.arts.ac.uk/iiif/collections/members/AB
+      - https://digitalcollections-api.arts.ac.uk/iiif/collections/members
+
+  ual-manifests:
+    type: Manifest
+    domain: digitalcollections-api.arts.ac.uk
+    prefix: /iiif/objects/
+    addedPrefix: ual-
+    examples:
+      - https://digitalcollections-api.arts.ac.uk/iiif/objects/calm:AB/2/3
+
   wellcome-manifest:
     type: Manifest
     domain: iiif.wellcomecollection.org
