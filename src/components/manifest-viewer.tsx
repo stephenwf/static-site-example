@@ -24,7 +24,7 @@ export const ManifestViewer = block(
             thumbnail: result.thumbnail,
             props: {
               manifest: result.id,
-            } as any,
+            },
           }));
         },
       },

@@ -10,25 +10,29 @@ export function HomepageSearch() {
         />
       </div>
       <div className="absolute h-page left-0 right-0 z-2 bg-opacity-50 bg-slate-600"></div>
-      <div className="w-page z-3 relative">
-        <div className="pt-96 text-white max-w-2xl">
-          <section className="mb-24">
-            <h1 className="text-5xl text-center">
-              Discover the IIIF I have put together here
-            </h1>
-            <p className="text-2xl text-center my-4">Search and share stuff</p>
-          </section>
-          <form action="/search" className="w-full flex">
-            <input
-              className="flex-1 p-4 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
-              type="text"
-              name="q"
-              placeholder="Search 10+ items"
-            />
-            <button className="bg-blue-600 hover:bg-blue-600 text-lg font-light text-white px-8 py-2 rounded-r-lg">
-              Search
-            </button>
-          </form>
+      <div className="w-page z-3 relative ">
+        <div className="text-white max-w-2xl flex items-center h-full">
+          <div>
+            <section className="mb-24">
+              <h1 className="text-5xl text-center">
+                Discover the IIIF I have put together here
+              </h1>
+              <p className="text-2xl text-center my-4">
+                Search and share stuff
+              </p>
+            </section>
+            <form action="/search" className="w-full flex">
+              <input
+                className="flex-1 p-4 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-black"
+                type="text"
+                name="q"
+                placeholder="Search 10+ items"
+              />
+              <button className="bg-blue-600 hover:bg-blue-600 text-lg font-light text-white px-8 py-2 rounded-r-lg">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
