@@ -31,6 +31,12 @@ stores:
     slugTemplates:
       - nls-manifests
       - nls-collections
+    run:
+      - extract-topics
+    config:
+      extract-topics:
+        topicTypes:
+          place: [ 'Place depicted' ]
 
 config:
   extract-label-string:
