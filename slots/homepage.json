@@ -77,61 +77,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "hawh4",
-      "type": "FourGrid",
-      "data": {
-        "title": "Some manifests",
-        "columns": 4
-      },
-      "slots": {
-        "gridItems": {
-          "slot_id": "gridItems",
-          "blocks": [
-            {
-              "id": "2q392l",
-              "type": "ManifestCard",
-              "data": {
-                "link": "manifests/wellcome-b30496950",
-                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b30496950_0001.JP2/full/200,/0/default.jpg",
-                "label": "9th self-portrait.",
-                "description": "a description"
-              }
-            },
-            {
-              "id": "xjj2l",
-              "type": "ManifestCard",
-              "data": {
-                "link": "manifests/wellcome-b30496925",
-                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b30496925_0001.JP2/full/200,/0/default.jpg",
-                "label": "6th self-portrait.",
-                "description": "asdasd asdasd "
-              }
-            },
-            {
-              "id": "q8kg2",
-              "type": "ManifestCard",
-              "data": {
-                "link": "manifests/wellcome-b3049686x",
-                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b3049686x_0001.JP2/full/200,/0/default.jpg",
-                "label": "Where the soft winds blow.",
-                "description": "asdasdasd asdasd asd "
-              }
-            },
-            {
-              "id": "jcpw2j",
-              "type": "ManifestCard",
-              "data": {
-                "link": "manifests/wellcome-b15423165",
-                "thumbnail": "https://iiif.wellcomecollection.org/thumbs/b15423165_0001.jp2/full/317,/0/default.jpg",
-                "label": "Albert Schweitzer.",
-                "description": "asdasdasd"
-              }
-            }
-          ]
-        }
-      }
     }
   ]
 }
