@@ -20,7 +20,6 @@ export default function Home() {
         <ThemeCard />
         <ThemeCard />
         <ThemeCard />
-        <ThemeCard />
       </FourGrid>
 
       <FourGrid title="Latest stories" columns={3}>
